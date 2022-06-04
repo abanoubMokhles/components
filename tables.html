@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table Components</title>
+    <style>
+      /* #087f5b */
+      body {
+        line-height: 1;
+        font-family: sans-serif;
+        font-weight: 400;
+        color: #333;
+      }
+      .container {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 7% 0;
+      }
+      table {
+        width: 100%;
+      }
+      table,
+      tr,
+      td {
+        border-collapse: collapse;
+      }
+      th,
+      td:first-child {
+        font-weight: bold;
+      }
+      td,
+      th {
+        padding: 1.2rem;
+        text-align: left;
+        width: 25%;
+      }
+      thead {
+        background-color: #087f5b;
+        color: #fff;
+      }
+      tr:nth-child(even) {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Chair</th>
+              <th>The Laid Back</th>
+              <th>The Worker Bee</th>
+              <th>The Chair 4/2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Width</td>
+              <td>80 cm</td>
+              <td>60 cm</td>
+              <td>220 cm</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td>100 cm</td>
+              <td>110 cm</td>
+              <td>90 cm</td>
+            </tr>
+            <tr>
+              <td>Depth</td>
+              <td>150 cm</td>
+              <td>110 cm</td>
+              <td>95 cm</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>16 kg</td>
+              <td>22 kg</td>
+              <td>40 kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

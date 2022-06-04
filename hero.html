@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(
+            to bottom right,
+            rgba(51, 51, 51, 0.3),
+            rgba(51, 51, 51, 0.3)
+          ),
+          url(hero.jpg) top center/cover;
+        color: #fff;
+      }
+      .nav,
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: 4.8rem;
+        margin-bottom: 3.6rem;
+      }
+      .hero-text {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 4.8rem;
+      }
+      .cta {
+        display: inline-block;
+        padding: 1.2rem 2.4rem;
+        color: #fff;
+        background-color: orange;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 600;
+        border-radius: 9px;
+      }
+      h2 {
+        font-size: 3.6rem;
+        margin-bottom: 2.4rem;
+      }
+      .hero-secondary p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 120rem;
+        margin: 0 auto;
+      }
+      .hero-secondary {
+        padding: 9.6rem 0;
+      }
+      .hero {
+        width: 120rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .half-hero {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation" class="container">
+        <div class="logo">Omnifood</div>
+        <div class="nav">Navigation</div>
+      </nav>
+      <div class="hero container">
+        <div class="half-hero">
+          <h1>A healthy meal delivered to your door every single day.</h1>
+          <p class="hero-text">
+            The smart 365-days-per-year food subscription, that will make you
+            eat healthy again, tailored to your personal tasts and nutritional
+            needs
+          </p>
+          <a href="#" class="cta">Start eating healthy</a>
+        </div>
+      </div>
+    </header>
+    <section class="hero-secondary">
+      <div class="container">
+        <h2>Another heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et
+          officia eaque quis nesciunt aliquid dolores modi ex? Provident odit
+          nisi quas dolor repellat commodi totam ex aspernatur voluptate
+          voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate et officia eaque quis nesciunt aliquid dolores modi ex?
+          Provident odit nisi quas dolor repellat commodi totam ex aspernatur
+          voluptate voluptatibus!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
